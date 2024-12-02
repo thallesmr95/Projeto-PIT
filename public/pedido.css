@@ -1,0 +1,285 @@
+/* Restaurante/public/pedido.css */
+
+/* Estilos Gerais */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f5; /* Cor de fundo mais suave */
+    padding: 20px;
+    color: #ffffff;
+    background-image: url('https://img.freepik.com/fotos-gratis/fundo-abstrato-escuro_1048-1920.jpg?size=338&ext=jpg&ga=GA1.1.1297763733.1729123200&semt=ais_hybrid'); /* Caminho da imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-attachment: fixed; /* Mantém a imagem de fundo fixa */
+}
+
+/* Cabeçalho */
+header {
+    /*background-image: url('https://img.freepik.com/fotos-premium/um-fundo-escuro-com-um-padrao-de-quadrados-pretos-que-diz-livre_662214-78093.jpg'); /* Caminho da imagem */
+    /*background-position: center; /* Centraliza a imagem de fundo */
+    /*background-size: cover; /* Garante que a imagem cubra toda a área */
+    /*background-repeat: no-repeat; /* Não repete a imagem */
+
+    border-radius: 8px;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+
+header h1 {
+
+    font-family: 'Dancing Script', cursive;
+    /*font-family: 'Poppins', sans-serif;*/
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    margin: 0 10px;
+    background-color: #292626;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+/* Seções */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+/* Categorias */
+.categorias {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.categorias button {
+    padding: 12px 24px;
+    margin: 0 10px;
+    background-color: #ddd;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.categorias button:hover {
+    background-color: #ccc;
+}
+
+.categorias button.active {
+    background-color: #ff8364;
+    color: white;
+}
+
+/* Layout de Produtos */
+.produtos-container {
+    display: grid;
+    color: #000; /* Texto preto */
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 30px;
+    font-style: italic;
+    
+}
+
+.produto-quadrante {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    background-image: url('https://img.freepik.com/vetores-gratis/copie-o-fundo-branco-ondulado-do-espaco_23-2148845471.jpg?semt=ais_hybrid'); /* Caminho da imagem */
+
+}
+
+.produto-quadrante:hover {
+    transform: translateY(-5px);
+}
+
+.produto-quadrante img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.produto-quadrante button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.produto-quadrante button:hover {
+    background-color: #218838;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .produtos-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+    }
+}
+
+@media (max-width: 768px) {
+    .produtos-container {
+        grid-template-columns: 1fr; /* 1 coluna */
+    }
+}
+
+/* Carrinho */
+.carrinho-container {
+    display: grid;
+    grid-template-columns: 1fr; /* Colocar cada item em uma linha */
+    gap: 15px; /* Espaço entre os quadrantes */
+}
+
+.carrinho-item {
+    background-color: white; /* Fundo branco nos quadrantes */
+    padding: 2px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombras leves */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #000; /* Texto preto */
+   /* font-family: 'Roboto', sans-serif;*/
+    font-style: italic;
+    font-size: 1rem;
+}
+
+.carrinho-item span {
+    flex-grow: 1;
+    padding-right: 20px; /* Espaço entre o texto e o botão */
+}
+
+.remover-btn {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 5px 12px;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.remover-btn:hover {
+    background-color: #e5533d;
+}
+
+/* Total */
+.total {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 15px;
+    color: #000000;
+    background-color: #fff;
+    border-top: 2px solid #ddd;
+    text-align: left;
+    display: block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#finalizarCompra {
+    background-color: #28a745; /* Cor verde destacada */
+    color: white; /* Texto branco */
+    font-size: 1.2rem; /* Tamanho de texto maior */
+    font-weight: bold; /* Deixa o texto em negrito */
+    padding: 15px 30px; /* Aumenta o padding para tornar o botão maior */
+    border: none; /* Remove bordas padrão */
+    border-radius: 8px; /* Bordas arredondadas */
+    cursor: pointer; /* Mostra o cursor de clique */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Animações suaves */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+
+#finalizarCompra:hover {
+    background-color: #218838; /* Cor mais escura no hover */
+    transform: scale(1.05); /* Aumenta ligeiramente o botão no hover */
+}
+
+#finalizarCompra:active {
+    background-color: #1e7e34; /* Cor mais escura ao clicar */
+    transform: scale(0.98); /* Efeito de clique */
+}
+
+#logout {
+    position: absolute; /* Posiciona o botão de forma absoluta */
+    top: 30px; /* Ajusta a posição vertical */
+    right: 20px; /* Ajusta a posição horizontal para a direita */
+    background-color: #6b6463; /* Cor de fundo para destaque */
+    color: white;
+    padding: 4px 8px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+#logout:hover {
+    background-color: #7c7270;
+}
+
+
+#status-usuario {
+    position: absolute; /* Posiciona o botão de forma absoluta */
+    top: 30px; /* Ajusta a posição vertical */
+    right: 100px; /* Ajusta a posição horizontal para a direita */
+    background-color: #6b6463; /* Cor de fundo para destaque */
+    color: white;
+    padding: 4px 8px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+
+#status-usuario:hover {
+    background-color: #7c7270;
+}
+
+

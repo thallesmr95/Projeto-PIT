@@ -1,0 +1,143 @@
+/* Restaurante/public/style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+
+
+body {
+    font-family: 'Lora', serif; /* Aplica a fonte Lora ao corpo */
+    background-color: #f8f8f8; /* Cor de fundo suave */
+    color: #333; /* Cor do texto */
+    line-height: 1.6; /* Melhora a legibilidade */
+    padding: 20px; /* Espaçamento interno */
+    background-image: url('https://img.freepik.com/fotos-gratis/fundo-abstrato-escuro_1048-1920.jpg?size=338&ext=jpg&ga=GA1.1.1297763733.1729123200&semt=ais_hybrid'); /* Caminho da imagem */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-attachment: fixed; /* Mantém a imagem de fundo fixa */
+
+}
+
+#titulo {
+    font-family: 'Dancing Script', cursive;
+    /*font-family: 'Playfair Display', serif;*/ /* Fonte elegante */
+    font-size: 3em;
+    color: #ffffff; /* Cor do texto */
+    text-shadow: 16px 16px 20px rgba(5, 0, 0, 0.5); /* Sombra do texto */
+    margin-bottom: 30px; /* Espaçamento abaixo do título */
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    /*font-family: 'Playfair Display', serif;*/ /* Aplica a fonte Playfair Display aos títulos */
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+    color: #ffffff; /* Cor do título */
+    margin-bottom: 15px; /* Espaçamento abaixo dos títulos */
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input {
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+
+#listaPedidos {
+    list-style-type: none; /* Remove os marcadores da lista */
+    padding: 0;
+}
+
+.pedido-item {
+    display: flex; /* Usar flexbox para alinhar os itens */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    align-items: center; /* Alinha os itens verticalmente */
+    border: 1px solid #ccc; /* Borda leve para cada item */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 10px; /* Espaçamento entre os pedidos */
+    border-radius: 5px; /* Bordas arredondadas */
+    background-color: #fff; /* Cor de fundo branca para cada item */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.pedido-servico {
+    flex: 1; /* Ocupa espaço disponível */
+    font-weight: bold; /* Negrito para o serviço */
+}
+
+.pedido-preco {
+    flex: 1; /* Ocupa espaço disponível */
+    text-align: center; /* Centraliza o preço */
+    font-style: italic; /* Itálico para o preço */
+}
+
+
+.pedido-categoria {
+    flex: 1;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Botão de remover serviço */
+.remover {
+    background-color: red; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Sem borda */
+    padding: 5px 10px; /* Espaçamento interno */
+    cursor: pointer; /* Cursor de pointer */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+
+.remover:hover {
+    background-color: darkred; /* Cor mais escura no hover */
+}
+
+/* Botão de alterar serviço */
+.alterar {
+    background-color: #007bff; /* Cor do botão de alterar */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.alterar:hover {
+    background-color: #0056b3; /* Cor mais escura no hover */
+}
+
+input[type="text"], input[type="number"] {
+    font-family: 'Lora', serif; /* Aplica a fonte Lora ao corpo */
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 150px;
+}
+
+
+select { /*Botão select: Campo Categoria*/
+    font-family: 'Lora', serif; /* Aplica a fonte Lora ao corpo */
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 150px;
+}
+

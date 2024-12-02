@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Cadastro - Restaurante</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <br>
+        <h1>Bem-vindo à Bela Cozinha</h1>
+        <div class="form-container">
+            <!-- Formulário de Login -->
+            <section id="login-section">
+                <h2>Login</h2>
+                <form id="login-form">
+                    <input type="email" id="email-login" placeholder="Digite seu email" required>
+                    <input type="password" id="senha-login" placeholder="Digite sua senha" required>
+                    <button type="submit">Entrar</button>
+                </form>
+            </section>
+
+            <div class="separator">ou</div>
+
+            <!-- Formulário de Cadastro -->
+            <section id="cadastro-section">
+                <h2>Criar Conta</h2>
+                <form id="cadastro-form">
+
+                    <input type="text" id="nome" placeholder="Digite seu nome" required>
+
+                    <input type="email" id="email" placeholder="Digite seu email" required>
+
+                    <input type="password" id="senha" placeholder="Crie uma senha" required>
+                    <button type="submit">Cadastrar</button>
+                </form>
+            </section>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

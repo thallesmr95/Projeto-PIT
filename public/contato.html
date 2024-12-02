@@ -1,0 +1,60 @@
+<!-- Restaurante/public/contato.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Bela Cozinha</title>
+    <link rel="stylesheet" href="pedido.css">
+</head>
+<body>
+    <header>
+        <h1>Bela Cozinha</h1>
+        <br>
+        <br>
+        <nav>
+            <a href="pedido.html">Página Inicial</a>
+            <a href="contato.html">Contato</a>
+            <a href="historia.html" id="link-historia">História</a>
+            <a href="#" id="logout">Sair</a>
+            <span id="status-usuario"></span>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contato">
+            <h2>Contato</h2>
+            <br>
+            <p><strong>Email:</strong> contato@belacozinha.com.br</p>
+            <br>
+            <p><strong>Telefone:</strong> (11) 98765-4321</p>
+            <br>
+            <p><strong>Endereço:</strong> Rua das Flores, 123 - São Paulo, SP</p>
+            <br>
+            <p><strong>WhatsApp:</strong> <a href="https://wa.me/5511987654321" target="_blank">(11) 98765-4321</a></p>
+            <br>
+        </section>
+    </main>
+    <div class="contato-imagem">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/029/128/881/small/phone-icon-3d-rendering-png.png" alt="Imagem de Contato"/>
+    </div>
+    <script>
+        const statusUsuario = document.getElementById('status-usuario');
+        const emailCliente = localStorage.getItem('email_cliente');
+    
+        if (emailCliente) {
+            statusUsuario.textContent = `Cliente: ${emailCliente}`;
+        } else {
+            statusUsuario.textContent = 'Login';
+        }
+    </script>
+    
+
+    <footer>
+        <br>
+        <br>
+        <br>
+        <p>&copy; 2024 Bela Cozinha. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

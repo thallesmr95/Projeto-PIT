@@ -1,0 +1,64 @@
+#contato {
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.contato-container {
+    display: flex;
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: space-between; /* Espaçamento entre os itens */
+    flex-wrap: wrap; /* Permite que os itens se ajustem em telas menores */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+.contato-texto {
+    flex: 1; /* O texto ocupa o máximo de espaço disponível */
+    font-size: 1rem;
+    line-height: 1.6;
+    padding-right: 20px; /* Espaçamento entre o texto e a imagem */
+}
+
+.contato-texto p {
+    margin: 10px 0;
+}
+
+.contato-texto a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contato-texto a:hover {
+    text-decoration: underline;
+}
+
+.contato-imagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/029/128/881/small/phone-icon-3d-rendering-png.png');
+    background-size: contain;      /* Ajusta o tamanho da imagem para se ajustar ao contêiner */
+    background-repeat: no-repeat;  /* Impede a repetição da imagem */
+    background-position: center;   /* Garante que a imagem seja centralizada */
+}
+
+
+.contato-imagem img {
+    max-width: 10%;               /* Limita a largura da imagem para que ela não ocupe mais que 80% da tela */
+    max-height: 10%;              /* Limita a altura da imagem para que ela não ocupe mais que 80% da tela */
+    object-fit: contain;          /* Ajusta a imagem para que ela mantenha a proporção sem distorcer */
+}
+
+
+
+/* Estilos para o rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #343a40;
+    color: white;
+}

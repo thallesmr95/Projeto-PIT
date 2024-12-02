@@ -1,0 +1,41 @@
+<!-- Restaurante/public/index.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1 id="titulo">Controle do Restaurante</h1>
+    <form id="restauranteForm">
+        <input type="text" id="servico" placeholder="Serviço" required />
+        <input type="number" step="0.01" id="preco" placeholder="Preço" required /> 
+        <select id="categoria" required>
+            <option value="">Categoria</option>
+            <option value="pratos principais">Pratos Principais</option>
+            <option value="porções">Porções</option>
+            <option value="bebidas">Bebidas</option>
+            <option value="sobremesa">Sobremesa</option>
+        </select>
+        <button type="submit">Adicionar Pedido</button>
+    </form>
+
+
+    
+
+
+    <h2>Lista de pedidos:</h2>
+    <ul id="listaPedidos">
+        <!-- Pedidos serão listados aqui -->
+    </ul>
+
+    <script src="script.js"></script>
+</body>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="public/style.css"> <!-- arquivo CSS -->
+
+</html>

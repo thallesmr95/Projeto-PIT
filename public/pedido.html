@@ -1,0 +1,68 @@
+<!-- Restaurante/public/pedido.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido - Restaurante</title>
+    <link rel="stylesheet" href="pedido.css">
+</head>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lora:wght@400&display=swap" rel="stylesheet">
+
+<body>
+    <header>
+        <h1>Bela Cozinha</h1>
+        <br>
+        <br>
+        <nav>
+            <a href="#">Página Inicial</a>
+            <a href="#" id="link-carrinho">Carrinho</a>
+            <a href="contato.html" id="link-contato">Contato</a>
+            <a href="historia.html" id="link-historia">História</a>
+            <a href="#" id="logout">Sair</a> <!-- Botão de logout -->
+            <span id="status-usuario"></span>
+        </nav>
+        <br>
+    </header>
+
+    <main>
+        <section id="produtos-section">
+            
+            <!-- <h2>PRODUTOS</h2> -->
+            <!-- Abas de Categorias -->
+            <div class="categorias">
+                <button class="tab-link" onclick="filtrarCategoria('todos')">Todos</button>
+                <button class="tab-link" onclick="filtrarCategoria('Pratos Principais')">Pratos Principais</button>
+                <button class="tab-link" onclick="filtrarCategoria('Porcoes')">Porções</button>
+                <button class="tab-link" onclick="filtrarCategoria('Bebidas')">Bebidas</button>
+                <button class="tab-link" onclick="filtrarCategoria('Sobremesa')">Sobremesa</button>
+            </div>
+
+            <!-- Div onde os produtos serão exibidos -->
+            <div class="produtos-container" id="produtos">
+                <!-- Os quadrantes dos produtos serão adicionados aqui dinamicamente -->
+            </div>
+            
+        </section>
+
+        <section id="carrinho-section">
+            <h2>Carrinho</h2>
+            <div id="carrinho" class="carrinho-container">
+                <!-- Itens do carrinho serão exibidos aqui -->
+            </div>
+            <br>
+            <div id="total" class="total">Total: R$0.00</div> <!-- Quadrante do total -->
+            <br>
+            <button id="finalizarCompra">Finalizar Compra</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bela Cozinha. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="pedido.js"></script>
+</body>
+
+</html>

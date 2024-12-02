@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atendimento</title>
+    <link rel="stylesheet" href="atendimento.css">
+</head>
+<body>
+    <header>
+        <h1>Lista de Pedidos</h1>
+    </header>
+    <main>
+        <table id="tabelaPedidos">
+            <div>
+                <label for="dataInicio">Data Início:</label>
+                <input type="date" id="dataInicio">
+                <label for="dataFim">Data Fim:</label>
+                <input type="date" id="dataFim">
+                <button id="filtrar">Buscar</button>
+            </div>
+            <thead>
+                <tr>
+                    <th>ID Pedido</th>
+                    <th>Serviço</th>
+                    <th>Preço</th>
+                    <th>Data</th>
+                    <th>Cliente</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dados preenchidos dinamicamente -->
+            </tbody>
+        </table>
+    </main>
+    <script src="atendimento.js"></script>
+</body>
+</html>
